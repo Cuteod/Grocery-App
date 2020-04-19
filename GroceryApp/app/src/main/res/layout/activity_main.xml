@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ImgGrocery"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="4dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/glocery_pic"
+            app:layout_constraintVertical_bias="0.318" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/ImgGrocery"
+            android:ems="10"
+            android:hint="@string/item_name"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="193dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/editText"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/ImgGrocery"
+            android:ems="10"
+            android:hint="@string/enter_price"
+            android:textSize="20sp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/BtnImage"
+            android:layout_width="101dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/editText2"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/ImgGrocery"
+            android:text="@string/save"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
